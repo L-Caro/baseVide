@@ -8,6 +8,7 @@ const session = require('express-session');
 
 // middleware
 const error404 = require('./app/middleware/404.js');
+const log = require('./app/middleware/log'); // infos log visiteurs
 
 //port d'écoute
 const PORT = process.env.PORT || 3000;
@@ -22,8 +23,9 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('public')); // fichiers statique
 app.use(express.urlencoded({ extended: true }));  // Lecture du payload
+// app.use(log);  A décommenter si utilisation du middleware log
 app.use(session({   // express session
-    secret: process.env.SECRET,
+    secret: process.env.SECRET_SESSION,
     resave: true,
     saveUninitialized: true,
     cookie: { secure: false }

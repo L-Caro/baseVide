@@ -1,20 +1,21 @@
 {
-  "name": "blog-rando",
+  "name": "Base_vide",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/L-Caro/Blog-rando.git"
+    "url": "git+https://github.com/L-Caro/baseVide.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/L-Caro/Blog-rando/issues"
+    "url": "https://github.com/L-Caro/baseVide/issues"
   },
-  "homepage": "https://github.com/L-Caro/Blog-rando#readme",
+  "homepage": "https://github.com/L-Caro/BaseVide#readme",
   "keywords": [],
   "description": "",
   "dependencies": {
